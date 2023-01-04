@@ -1,9 +1,11 @@
-[build-options]
-  observabilityIncluded = true
-
 [package]
-  distribution = "2201.2.3"
-  name = "patientfhirapi"
-  org = "nirmalfernando"
-  version = "0.1.0"
+org = "wso2healthcare"
+name = "PatientAPITest"
+version = "0.1.1"
+export = ["PatientAPITest"]
+distribution = "2201.1.2"
+authors = ["WSO2 Healthcare"]
+keywords = ["Healthcare","FHIR","Patient","r4","international"]
 
+[build-options]
+observabilityIncluded = true
