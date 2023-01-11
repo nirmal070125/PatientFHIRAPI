@@ -311,7 +311,7 @@ dependencies = [
 [[package]]
 org = "wso2healthcare"
 name = "healthcare.fhir.r4"
-version = "0.1.4"
+version = "0.1.5"
 dependencies = [
 	{org = "ballerina", name = "http"},
 	{org = "ballerina", name = "io"},

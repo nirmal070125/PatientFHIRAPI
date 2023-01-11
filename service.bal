@@ -228,7 +228,7 @@ final r4:ResourceAPIConfig apiConfig = {
 # bound to port `9090`.
 @http:ServiceConfig {
     interceptors: [
-        // new r4:FHIRReadRequestInterceptor(apiConfig),
+        new r4:FHIRReadRequestInterceptor(apiConfig),
         new r4:FHIRCreateRequestInterceptor(apiConfig),
         new r4:FHIRSearchRequestInterceptor(apiConfig),
         new r4:FHIRRequestErrorInterceptor(),
