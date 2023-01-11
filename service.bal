@@ -275,8 +275,8 @@ service / on new http:Listener(9090) {
 
     }
     // Read the current state of the resource
-    resource isolated function get fhir/r4/Patient/[string id](http:RequestContext ctx, http:Request request) returns json|xml|r4:FHIRError {
-        log:printInfo("request headers: " + request.getHeaderNames().toBalString());
+    resource isolated function get fhir/r4/Patient/[string id](http:RequestContext ctx, http:Request request) returns json|xml|r4:FHIRError|error {
+        log:printInfo("request headers: " + (check request.getHeader("x-jwt-assertion")).toBalString());
         log:printDebug("FHIR interaction : read");
         io:println("FHIR interaction : read");
 
